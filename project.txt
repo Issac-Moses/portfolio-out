@@ -1,0 +1,1564 @@
+2:I[8047,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Column"]
+3:I[9316,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Heading"]
+4:I[9818,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"ProjectCard"]
+e:I[1214,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Mailchimp"]
+f:I[4707,[],""]
+10:I[6423,[],""]
+5:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+6:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+7:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+8:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+9:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+a:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+b:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+c:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+d:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+0:["6HNJMjS_1nHVfFmuoa_1a",[[["",{"children":["project",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["project",{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"maxWidth":"m","children":[["$","$L3",null,{"marginBottom":"l","variant":"display-strong-s","children":"𝓕𝓻𝓸𝓶 𝓬𝓸𝓭𝓮𝓼 𝓽𝓸 𝓷𝓸𝓭𝓮𝓼, 𝓘’𝓿𝓮 𝓭𝓪𝓷𝓬𝓮𝓭 𝓽𝓱𝓻𝓸𝓾𝓰𝓱 𝓮𝓿𝓮𝓻𝔂 𝓴𝓲𝓷𝚍 𝓸𝓯 𝓹𝚛𝚘𝓳𝓮𝓬𝓽 — 𝓿𝓮𝚛𝓼𝓪𝓽𝓲𝓵𝓲𝓽𝔂 𝓲𝓼 𝓶𝔂 𝓳𝓪𝓶 𝓲𝓷 𝓽𝓱𝓮 𝓼𝓸𝓯𝓽𝔀𝓪𝓻𝓮 𝓰𝓪𝓶𝓮. 😌"}],["$","$L2",null,{"fillWidth":true,"flex":1,"children":["$","$L2",null,{"fillWidth":true,"gap":"xl","marginBottom":"40","paddingX":"l","children":["$","div",null,{"className":"display-grid columns-1 g-32","children":[["$","$L4","beacon",{"priority":true,"href":"/project/beacon","images":["/projects/Beacon.mp4"],"title":"𝙱𝚎𝚊𝚌𝚘𝚗 - 𝙳𝚎𝚜𝚔𝚝𝚘𝚙 𝙰𝙸 𝙰𝚜𝚜𝚒𝚜𝚝𝚊𝚗𝚝","description":"Iᴛ Lɪsᴛᴇɴs Tᴏ Wᴀᴋᴇ Wᴏʀᴅs, Uɴᴅᴇʀsᴛᴀɴᴅs Cᴏᴍᴍᴀɴᴅs Usɪɴɢ Wʜɪsᴘᴇʀ.ᴄᴘᴘ, Aɴᴅ Eᴠᴇɴ Tᴀᴋᴇs Sᴄʀᴇᴇɴsʜᴏᴛs & Aᴜᴛᴏᴍᴀᴛᴇs ᴛᴀsᴋs ","content":"$5","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Varsha.jpg"}],"link":"https://youtu.be/iJfMbhvFMkc","github":"https://github.com/Issac-Moses","showCaseStudy":false}],["$","$L4","chatbot",{"priority":true,"href":"/project/chatbot","images":["/projects/ChatBot-2.0.mp4"],"title":"𝙵𝚛𝚎𝚣𝚗𝚢 - 𝙰𝙸 𝙲𝚑𝚊𝚝𝚋𝚘𝚝 𝚠𝚒𝚝𝚑 𝙸𝚖𝚊𝚐𝚎 𝙸𝚗𝚙𝚞𝚝 (𝚆𝚎𝚋 & 𝙼𝚘𝚋𝚒𝚕𝚎)","description":"~Wʜᴇʀᴇ Cᴏɴᴠᴇʀsᴀᴛɪᴏɴs Nᴇᴠᴇʀ Bʀᴇᴀᴋ, & Iᴍᴀɢᴇs Sᴘᴇᴀᴋ Lᴏᴜᴅᴇʀ Tʜᴀɴ Wᴏʀᴅs.×Yᴇs, Fʀᴇɴᴢʏ 1.1 Sᴜᴘᴘᴏʀᴛs Cᴏɴᴛɪɴᴜᴏᴜs Cʜᴀᴛs + Iᴍᴀɢᴇ Iɴᴘᴜᴛ.®Sᴛɪʟʟ ɪɴ Tʜᴇ Dᴇᴠᴇʟᴏᴘᴍᴇɴᴛ Sᴛᴀɢᴇ -- Sᴏ Dᴏɴ'ᴛ Mɪsᴜsᴇ Tʜᴇ Mᴀᴅɴᴇss! ","content":"$6","avatars":[{"src":"/about/me.jpg"}],"link":"https://youtu.be/q9wDidbys-Q","github":"https://github.com/Issac-Moses/liebea","showCaseStudy":false}],["$","$L4","frenzy-os",{"priority":false,"href":"/project/frenzy-os","images":["/projects/OS.mp4"],"title":"𝙵𝚛𝚎𝚗𝚣𝚢 𝙾𝚂 - 𝙾𝚙𝚝𝚒𝚖𝚒𝚣𝚎𝚍 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 𝚘𝚏 𝙻𝚒𝚗𝚞𝚡 𝙳𝚒𝚜𝚝𝚛𝚒𝚋𝚞𝚝𝚒𝚘𝚗 𝚏𝚘𝚛 𝙴𝚗𝚑𝚊𝚗𝚌𝚎𝚍 𝙿𝚎𝚛𝚏𝚘𝚛𝚖𝚊𝚗𝚌𝚎","description":"ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴏꜰ ᴏᴘᴛɪᴍɪᴢᴇᴅ ᴏꜱ ᴠᴇʀꜱɪᴏɴ ᴡʜɪᴄʜ ʜᴀꜱ ʙᴇᴇɴ ᴛᴀɪʟᴏʀᴇᴅ ꜰᴏʀ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ, ꜱᴇᴄᴜʀɪᴛʏ, ᴀɴᴅ ᴜꜱᴇʀ ᴇxᴘᴇʀɪᴇɴᴄᴇ, ᴍᴀᴋɪɴɢ ɪᴛ ɪᴅᴇᴀʟ ꜰᴏʀ ʙᴏᴛʜ ᴘᴇʀꜱᴏɴᴀʟ ᴀɴᴅ ᴘʀᴏꜰᴇꜱꜱɪᴏɴᴀʟ ᴜꜱᴇ.","content":"$7","avatars":[{"src":"/about/me.jpg"}],"link":"https://youtu.be/1VwgvmCC6mE","github":"https://github.com/Issac-Moses/Frenzy-OS","showCaseStudy":false}],["$","$L4","link-tree",{"priority":false,"href":"/project/link-tree","images":["/projects/LinkTree.mp4"],"title":"Linktree Website","description":"𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝗆𝖾𝗇𝗍 𝗈𝖿 𝖺 𝗉𝖾𝗋𝗌𝗈𝗇𝖺𝗅 𝗅𝗂𝗇𝗄𝗍𝗋𝖾𝖾 𝗐𝖾𝖻𝗌𝗂𝗍𝖾 𝗍𝗈 𝖼𝗈𝗇𝗌𝗈𝗅𝗂𝖽𝖺𝗍𝖾 𝖺𝗇𝖽 𝗌𝗁𝗈𝗐𝖼𝖺𝗌𝖾 𝗏𝖺𝗋𝗂𝗈𝗎𝗌𝖾 𝗌𝗈𝖼𝗂𝖺𝗅 𝗆𝖾𝖽𝗂𝖺 𝖺𝗇𝖽 𝗉𝗋𝗈𝗃𝖾𝖼𝗍 𝗅𝗂𝗇𝗄𝗌 𝗂𝗇 𝗈𝗇𝖾 𝗉𝗅𝖺𝖼𝖾.","content":"$8","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Jannet.jpg"},{"src":"/about/Hema.jpg"}],"link":"https://youtu.be/1VwgvmCC6mE","github":"https://github.com/Issac-Moses/Linktree","showCaseStudy":false}],["$","$L4","lunar",{"priority":false,"href":"/project/lunar","images":["/projects/Lunar-Model.mp4"],"title":"𝙻𝚞𝚗𝚊𝚛 - 𝙵𝚎𝚖𝚊𝚕𝚎 𝚁𝚎𝚝𝚛𝚒𝚎𝚟𝚊𝚕 𝚅𝚘𝚒𝚌𝚎 𝙲𝚑𝚊𝚗𝚐𝚎𝚛 𝙼𝚘𝚍𝚎𝚕","description":"𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚘𝚏 𝚊𝚗 𝙰𝙸-𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚟𝚘𝚒𝚌𝚎 𝚌𝚑𝚊𝚗𝚐𝚎𝚛 𝚖𝚘𝚍𝚎𝚕 𝚜𝚙𝚎𝚌𝚒𝚏𝚒𝚌𝚊𝚕𝚕𝚢 𝚍𝚎𝚜𝚒𝚐𝚗𝚎𝚍 𝚏𝚘𝚛 𝚎𝚏𝚏𝚎𝚌𝚝𝚒𝚟𝚎𝚕𝚢 𝚝𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚒𝚗𝚐.","content":"$9","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Dharani.jpg"}],"link":"https://youtu.be/NXoUbMIjRA8","github":"","showCaseStudy":false}],["$","$L4","note-summerizer",{"priority":false,"href":"/project/note-summerizer","images":["/projects/Note-Summerize-Model.mp4"],"title":"𝙽𝚘𝚝𝚎 𝚂𝚞𝚖𝚖𝚎𝚛𝚒𝚣𝚎𝚛 - 𝙰𝙸-𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝙼𝚎𝚎𝚝𝚒𝚗𝚐 𝙽𝚘𝚝𝚎𝚜 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚘𝚛","description":"𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚘𝚏 𝙰𝙸-𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚖𝚎𝚎𝚝𝚒𝚗𝚐 𝚗𝚘𝚝𝚎𝚜 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚘𝚛 𝚝𝚑𝚊𝚝 𝚝𝚛𝚊𝚗𝚜𝚌𝚛𝚒𝚋𝚎𝚜 𝚊𝚗𝚍 𝚜𝚞𝚖𝚖𝚊𝚛𝚒𝚣𝚎𝚜 𝚖𝚎𝚎𝚝𝚒𝚗𝚐𝚜 𝚒𝚗 𝚛𝚎𝚊𝚕-𝚝𝚒𝚖𝚎, 𝚎𝚗𝚑𝚊𝚗𝚌𝚒𝚗𝚐 𝚙𝚛𝚘𝚍𝚞𝚌𝚝𝚒𝚟𝚒𝚝𝚢 𝚊𝚗𝚍 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚛𝚎𝚗𝚝𝚎𝚗𝚝𝚒𝚘𝚗.","content":"$a","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Nambi.jpg"}],"link":"https://youtu.be/1VwgvmCC6mE","github":"https://github.com/Issac-Moses/Notes-Summarizer","showCaseStudy":false}],["$","$L4","shadowplay",{"priority":false,"href":"/project/shadowplay","images":["/images/SP1.jpg","/images/SP2.jpg"],"title":"𝚂𝚑𝚊𝚍𝚘𝚠 𝙿𝚕𝚊𝚢 - 𝚕𝚘𝚠 𝚎𝚗𝚍 𝚍𝚎𝚟𝚒𝚌𝚎 𝚐𝚊𝚖𝚎 𝚛𝚎𝚌𝚘𝚛𝚍𝚒𝚗𝚐 𝚜𝚘𝚏𝚝𝚠𝚊𝚛𝚎","description":"𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚘𝚏 𝚊 𝚕𝚒𝚐𝚑𝚝𝚠𝚎𝚒𝚐𝚑𝚝 𝚐𝚊𝚖𝚎 𝚛𝚎𝚌𝚘𝚛𝚍𝚒𝚗𝚐 𝚜𝚘𝚏𝚝𝚠𝚊𝚛𝚎 𝚘𝚙𝚝𝚒𝚖𝚒𝚣𝚎𝚍 𝚏𝚘𝚛 𝚕𝚘𝚠-𝚎𝚗𝚍 𝚍𝚎𝚟𝚒𝚌𝚎𝚜, 𝚎𝚗𝚊𝚋𝚕𝚒𝚕𝚗𝚐 𝚜𝚖𝚘𝚘𝚝𝚑 𝚐𝚊𝚖𝚎𝚙𝚕𝚊𝚢 𝚌𝚊𝚙𝚝𝚞𝚛𝚎 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚌𝚘𝚖𝚙𝚛𝚘𝚖𝚒𝚜𝚒𝚗𝚐 𝚙𝚎𝚛𝚏𝚘𝚛𝚖𝚊𝚗𝚌𝚎.","content":"$b","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Carolin.jpg"}],"link":"https://www.linkedin.com/posts/issacmosesd_python-opensource-programming-activity-7366445590563414017-zw9D?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFEIwbAB6fbvxP5aOSIzSLaQMey25NjlSZQ","github":"","showCaseStudy":false}],["$","$L4","weather-app",{"priority":false,"href":"/project/weather-app","images":["/projects/Weather.mp4"],"title":"𝚆e𝚊𝚝𝚑𝚎𝚛 𝙰𝚙𝚙 - 𝚁𝚎𝚊𝚕-𝚃𝚒𝚖𝚎 𝚆𝚎𝚊𝚝𝚑𝚎𝚛 𝙵𝚘𝚛𝚎𝚌𝚊𝚜𝚝𝚒𝚗𝚐 𝙰𝚙𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚘𝚗","description":"𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚘𝚏 𝚊 𝚛𝚎𝚊𝚕-𝚝𝚒𝚖𝚎 𝚠𝚎𝚊𝚝𝚑𝚎𝚛 𝚏𝚘𝚛𝚎𝚌𝚊𝚜𝚝𝚒𝚗𝚐 𝚊𝚙𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚘𝚗 𝚝𝚑𝚊𝚝 𝚙𝚛𝚘𝚟𝚒𝚍𝚎𝚜 𝚊𝚌𝚌𝚞𝚛𝚊𝚝𝚎 𝚊𝚗𝚍 𝚞𝚙-𝚝𝚘-𝚍𝚊𝚝𝚎 𝚠𝚎𝚊𝚝𝚑𝚎𝚛 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚞𝚜𝚒𝚗𝚐 𝚊𝚍𝚟𝚊𝚗𝚌𝚎𝚍 𝙰𝙿𝙸𝚜 𝚊𝚗𝚍 𝚞𝚜𝚎𝚛-𝚏𝚛𝚒𝚎𝚗𝚍𝚕𝚢 𝚒𝚗𝚝𝚎𝚛𝚏𝚊𝚌𝚎𝚜.","content":"$c","avatars":[{"src":"/about/me.jpg"}],"link":"https://youtu.be/zb8uX10gges","github":"","showCaseStudy":false}],["$","$L4","women-safety-app",{"priority":false,"href":"/project/women-safety-app","images":["https://youtu.be/rO2BsRmzlK4"],"title":"𝚆𝚘𝚖𝚎𝚗 𝚂𝚊𝚏𝚎𝚝𝚢 𝙰𝚙𝚙 - 𝙰𝙸-𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝙿𝚎𝚛𝚜𝚘𝚗𝚊𝚕 𝚂𝚊𝚏𝚎𝚝𝚢 𝚊𝚗𝚍 𝙴𝚖𝚎𝚛𝚐𝚎𝚗𝚌𝚢 𝚁𝚎𝚜𝚙𝚘𝚗𝚜𝚎","description":"Development of an AI-powered personal safety and emergency response app.","content":"$d","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Nambi.jpg"}],"link":"https://youtu.be/1VwgvmCC6mE","github":"https://github.com/Issac-Moses/Women-Safety-App","showCaseStudy":false}]]}]}]}],["$","$Le",null,{"newsletter":{"display":true,"title":["𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎 𝚝𝚘 ","𝓘𝓼𝓼𝓪𝓬","'𝚜 𝙽𝚎𝚠𝚜𝚕𝚎𝚝𝚝𝚎𝚛"],"description":"𝖨 𝗈𝖼𝖼𝖺𝗌𝗂𝗈𝗇𝖺𝗅𝗅𝗒 𝗐𝗋𝗂𝗍𝖾 𝖺𝖻𝗈𝗎𝗍 𝖽𝖾𝗌𝗂𝗀𝗇, 𝗍𝖾𝖼𝗁𝗇𝗈𝗅𝗈𝗀𝗒, 𝖺𝗇𝖽 𝗌𝗁𝖺𝗋𝖾 𝗍𝗁𝗈𝗎𝗀𝗁𝗍𝗌 𝗈𝗇 𝗍𝗁𝖾 𝗂𝗇𝗍𝖾𝗋𝗌𝖾𝖼𝗍𝗂𝗈𝗇 𝗈𝖿       𝖼𝗋𝖾𝖺𝗍𝗂𝗏𝗂𝗍𝗒 𝖺𝗇𝖽 𝖾𝗇𝗀𝗂𝗇𝖾𝖾𝗋𝗂𝗇𝗀."}}]]}],null],null],null]},[null,["$","$Lf",null,{"parallelRouterKey":"children","segmentPath":["children","project","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L10",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/15321eadbcfb15cf.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/4327065330a0b563.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c96b3e5feff09199.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/838e13b95c2622d4.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a5c471f6f9fb2804.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/e578cf952a0222b2.css","precedence":"next","crossOrigin":"$undefined"}]],"$L11"],null],null],["$L12",null]]]]
+13:I[1162,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Flex"]
+15:I[6995,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"ToastProvider"]
+16:I[124,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Background"]
+17:I[9295,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Header"]
+18:I[1844,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"RouteGuard"]
+19:I[2313,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"PageTransition"]
+1a:I[2060,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"Text"]
+1b:I[9511,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"SmartLink"]
+1c:I[7868,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"IconButton"]
+1d:I[4093,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"CustomCursor"]
+1e:I[4158,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"ScreenEffects"]
+1f:I[8411,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"SoundEffects"]
+20:I[6620,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","880","static/chunks/app/project/page-6c823714353a075e.js"],"ThemeCustomizer"]
+14:T4c9,
+              (function() {
+                try {
+                  var stored = localStorage.getItem('themeConfig');
+                  if (stored) {
+                    var parsed = JSON.parse(stored);
+                    var root = document.documentElement;
+                    if (parsed.border) root.setAttribute('data-border', parsed.border);
+                    if (parsed.brand) root.setAttribute('data-brand', parsed.brand);
+                    if (parsed.accent) root.setAttribute('data-accent', parsed.accent);
+                    if (parsed.neutral) root.setAttribute('data-neutral', parsed.neutral);
+                    root.setAttribute('data-theme', 'dark');
+                    if (parsed.solid) root.setAttribute('data-solid', parsed.solid);
+                    if (parsed.solidStyle) root.setAttribute('data-solid-style', parsed.solidStyle);
+                    if (parsed.transition) root.setAttribute('data-transition', parsed.transition);
+                    if (parsed.scaling) root.setAttribute('data-scaling', parsed.scaling);
+                    if (parsed.surface) root.setAttribute('data-surface', parsed.surface);
+                  }
+                } catch (e) {}
+              })();
+            11:["$","$L13",null,{"as":"html","lang":"en","background":"page","data-neutral":"slate","data-brand":"aqua","data-accent":"aqua","data-solid":"contrast","data-solid-style":"flat","data-theme":"dark","data-border":"rounded","data-surface":"translucent","data-transition":"micro","className":"__variable_f367f3 __variable_a06722","style":{"cursor":"none"},"children":["$","$L2",null,{"style":{"minHeight":"100vh"},"as":"body","fillWidth":true,"margin":"0","padding":"0","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$14"}}],["$","$L15",null,{"children":[["$","$L16",null,{"mask":{"cursor":true,"x":0,"y":0,"radius":85},"gradient":{"display":true,"x":60,"y":5,"width":130,"height":130,"tilt":-20,"colorStart":"brand-background-strong","colorEnd":"static-transparent","opacity":50},"dots":{"display":true,"color":"brand-on-background-weak","size":2,"opacity":25},"grid":{"display":false,"color":"neutral-alpha-weak","width":"$undefined","height":"$undefined","opacity":100},"lines":{"display":true,"opacity":20}}],["$","$L13",null,{"fillWidth":true,"minHeight":"16"}],["$","$L17",null,{}],["$","$L13",null,{"position":"relative","zIndex":0,"fillWidth":true,"paddingY":"l","paddingX":"l","horizontal":"center","flex":1,"children":["$","$L13",null,{"horizontal":"center","fillWidth":true,"minHeight":"0","children":["$","$L18",null,{"children":["$","$L19",null,{"children":["$","$Lf",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L10",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$L2",null,{"as":"section","fill":true,"center":true,"paddingBottom":"160","children":[["$","$L1a",null,{"marginBottom":"s","variant":"display-strong-xl","children":"404"}],["$","$L3",null,{"marginBottom":"l","variant":"display-default-xs","children":"Page Not Found"}],["$","$L1a",null,{"onBackground":"neutral-weak","children":"The page you are looking for does not exist."}]]}],"notFoundStyles":[]}]}]}]}]}],["$","$L13",null,{"as":"footer","position":"relative","fillWidth":true,"padding":"8","horizontal":"center","mobileDirection":"column","children":[["$","$L13",null,{"className":"Footer_mobile__TYNqJ","maxWidth":"m","paddingY":"8","paddingX":"16","gap":"16","horizontal":"space-between","vertical":"center","children":[["$","$L1a",null,{"variant":"body-default-s","onBackground":"neutral-strong","children":[["$","$L1a",null,{"onBackground":"neutral-weak","children":["© ",2026," /"]}],["$","$L1a",null,{"paddingX":"4","children":"𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","$L1a",null,{"onBackground":"neutral-weak","children":["/ My"," ",["$","$L1b",null,{"style":{"marginLeft":"-0.125rem"},"href":"hhttps://github.com/Issac-Moses/Issac-Moses-Portfolio","children":"PortFolio"}]]}]]}],["$","$L13",null,{"gap":"16","children":[["$","$L1c","𝙶𝚒𝚝𝙷𝚞𝚋",{"href":"https://github.com/Issac-Moses","icon":"github","tooltip":"𝙶𝚒𝚝𝙷𝚞𝚋","size":"s","variant":"ghost"}],["$","$L1c","𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗",{"href":"https://www.linkedin.com/in/i%EF%BD%93%EF%BD%93-a-c-m-%E5%8F%A3%EF%BD%93%E3%83%A2%EF%BD%93-d-12837831b/","icon":"linkedin","tooltip":"𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗","size":"s","variant":"ghost"}],"",["$","$L1c","𝙴𝚖𝚊𝚒𝚕",{"href":"mailto:issacmoses19082005@gmail.com","icon":"email","tooltip":"𝙴𝚖𝚊𝚒𝚕","size":"s","variant":"ghost"}]]}]]}],["$","$L13",null,{"height":"80","show":"s"}]]}],["$","$L1d",null,{}],["$","$L1e",null,{}],["$","$L1f",null,{}],["$","$L20",null,{}]]}]]}]}]
+21:T484,https://demo.magic-portfolio.com/og?title=%F0%9D%93%95%F0%9D%93%BB%F0%9D%93%B8%F0%9D%93%B6%20%F0%9D%93%AC%F0%9D%93%B8%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%20%F0%9D%93%BD%F0%9D%93%B8%20%F0%9D%93%B7%F0%9D%93%B8%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%2C%20%F0%9D%93%98%E2%80%99%F0%9D%93%BF%F0%9D%93%AE%20%F0%9D%93%AD%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%AC%F0%9D%93%AE%F0%9D%93%AD%20%F0%9D%93%BD%F0%9D%93%B1%F0%9D%93%BB%F0%9D%93%B8%F0%9D%93%BE%F0%9D%93%B0%F0%9D%93%B1%20%F0%9D%93%AE%F0%9D%93%BF%F0%9D%93%AE%F0%9D%93%BB%F0%9D%94%82%20%F0%9D%93%B4%F0%9D%93%B2%F0%9D%93%B7%F0%9D%9A%8D%20%F0%9D%93%B8%F0%9D%93%AF%20%F0%9D%93%B9%F0%9D%9A%9B%F0%9D%9A%98%F0%9D%93%B3%F0%9D%93%AE%F0%9D%93%AC%F0%9D%93%BD%20%E2%80%94%20%F0%9D%93%BF%F0%9D%93%AE%F0%9D%9A%9B%F0%9D%93%BC%F0%9D%93%AA%F0%9D%93%BD%F0%9D%93%B2%F0%9D%93%B5%F0%9D%93%B2%F0%9D%93%BD%F0%9D%94%82%20%F0%9D%93%B2%F0%9D%93%BC%20%F0%9D%93%B6%F0%9D%94%82%20%F0%9D%93%B3%F0%9D%93%AA%F0%9D%93%B6%20%F0%9D%93%B2%F0%9D%93%B7%20%F0%9D%93%BD%F0%9D%93%B1%F0%9D%93%AE%20%F0%9D%93%BC%F0%9D%93%B8%F0%9D%93%AF%F0%9D%93%BD%F0%9D%94%80%F0%9D%93%AA%F0%9D%93%BB%F0%9D%93%AE%20%F0%9D%93%B0%F0%9D%93%AA%F0%9D%93%B6%F0%9D%93%AE.%20%F0%9F%98%8C22:T484,https://demo.magic-portfolio.com/og?title=%F0%9D%93%95%F0%9D%93%BB%F0%9D%93%B8%F0%9D%93%B6%20%F0%9D%93%AC%F0%9D%93%B8%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%20%F0%9D%93%BD%F0%9D%93%B8%20%F0%9D%93%B7%F0%9D%93%B8%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%2C%20%F0%9D%93%98%E2%80%99%F0%9D%93%BF%F0%9D%93%AE%20%F0%9D%93%AD%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%AC%F0%9D%93%AE%F0%9D%93%AD%20%F0%9D%93%BD%F0%9D%93%B1%F0%9D%93%BB%F0%9D%93%B8%F0%9D%93%BE%F0%9D%93%B0%F0%9D%93%B1%20%F0%9D%93%AE%F0%9D%93%BF%F0%9D%93%AE%F0%9D%93%BB%F0%9D%94%82%20%F0%9D%93%B4%F0%9D%93%B2%F0%9D%93%B7%F0%9D%9A%8D%20%F0%9D%93%B8%F0%9D%93%AF%20%F0%9D%93%B9%F0%9D%9A%9B%F0%9D%9A%98%F0%9D%93%B3%F0%9D%93%AE%F0%9D%93%AC%F0%9D%93%BD%20%E2%80%94%20%F0%9D%93%BF%F0%9D%93%AE%F0%9D%9A%9B%F0%9D%93%BC%F0%9D%93%AA%F0%9D%93%BD%F0%9D%93%B2%F0%9D%93%B5%F0%9D%93%B2%F0%9D%93%BD%F0%9D%94%82%20%F0%9D%93%B2%F0%9D%93%BC%20%F0%9D%93%B6%F0%9D%94%82%20%F0%9D%93%B3%F0%9D%93%AA%F0%9D%93%B6%20%F0%9D%93%B2%F0%9D%93%B7%20%F0%9D%93%BD%F0%9D%93%B1%F0%9D%93%AE%20%F0%9D%93%BC%F0%9D%93%B8%F0%9D%93%AF%F0%9D%93%BD%F0%9D%94%80%F0%9D%93%AA%F0%9D%93%BB%F0%9D%93%AE%20%F0%9D%93%B0%F0%9D%93%AA%F0%9D%93%B6%F0%9D%93%AE.%20%F0%9F%98%8C12:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"𝓕𝓻𝓸𝓶 𝓬𝓸𝓭𝓮𝓼 𝓽𝓸 𝓷𝓸𝓭𝓮𝓼, 𝓘’𝓿𝓮 𝓭𝓪𝓷𝓬𝓮𝓭 𝓽𝓱𝓻𝓸𝓾𝓰𝓱 𝓮𝓿𝓮𝓻𝔂 𝓴𝓲𝓷𝚍 𝓸𝓯 𝓹𝚛𝚘𝓳𝓮𝓬𝓽 — 𝓿𝓮𝚛𝓼𝓪𝓽𝓲𝓵𝓲𝓽𝔂 𝓲𝓼 𝓶𝔂 𝓳𝓪𝓶 𝓲𝓷 𝓽𝓱𝓮 𝓼𝓸𝓯𝓽𝔀𝓪𝓻𝓮 𝓰𝓪𝓶𝓮. 😌"}],["$","meta","3",{"name":"description","content":"Explore personal and collaborative works by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","meta","4",{"name":"robots","content":"index, follow"}],["$","meta","5",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","6",{"property":"og:title","content":"𝓕𝓻𝓸𝓶 𝓬𝓸𝓭𝓮𝓼 𝓽𝓸 𝓷𝓸𝓭𝓮𝓼, 𝓘’𝓿𝓮 𝓭𝓪𝓷𝓬𝓮𝓭 𝓽𝓱𝓻𝓸𝓾𝓰𝓱 𝓮𝓿𝓮𝓻𝔂 𝓴𝓲𝓷𝚍 𝓸𝓯 𝓹𝚛𝚘𝓳𝓮𝓬𝓽 — 𝓿𝓮𝚛𝓼𝓪𝓽𝓲𝓵𝓲𝓽𝔂 𝓲𝓼 𝓶𝔂 𝓳𝓪𝓶 𝓲𝓷 𝓽𝓱𝓮 𝓼𝓸𝓯𝓽𝔀𝓪𝓻𝓮 𝓰𝓪𝓶𝓮. 😌"}],["$","meta","7",{"property":"og:description","content":"Explore personal and collaborative works by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","meta","8",{"property":"og:url","content":"https://demo.magic-portfolio.com/project"}],["$","meta","9",{"property":"og:image","content":"$21"}],["$","meta","10",{"property":"og:image:alt","content":"𝓕𝓻𝓸𝓶 𝓬𝓸𝓭𝓮𝓼 𝓽𝓸 𝓷𝓸𝓭𝓮𝓼, 𝓘’𝓿𝓮 𝓭𝓪𝓷𝓬𝓮𝓭 𝓽𝓱𝓻𝓸𝓾𝓰𝓱 𝓮𝓿𝓮𝓻𝔂 𝓴𝓲𝓷𝚍 𝓸𝓯 𝓹𝚛𝚘𝓳𝓮𝓬𝓽 — 𝓿𝓮𝚛𝓼𝓪𝓽𝓲𝓵𝓲𝓽𝔂 𝓲𝓼 𝓶𝔂 𝓳𝓪𝓶 𝓲𝓷 𝓽𝓱𝓮 𝓼𝓸𝓯𝓽𝔀𝓪𝓻𝓮 𝓰𝓪𝓶𝓮. 😌"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"𝓕𝓻𝓸𝓶 𝓬𝓸𝓭𝓮𝓼 𝓽𝓸 𝓷𝓸𝓭𝓮𝓼, 𝓘’𝓿𝓮 𝓭𝓪𝓷𝓬𝓮𝓭 𝓽𝓱𝓻𝓸𝓾𝓰𝓱 𝓮𝓿𝓮𝓻𝔂 𝓴𝓲𝓷𝚍 𝓸𝓯 𝓹𝚛𝚘𝓳𝓮𝓬𝓽 — 𝓿𝓮𝚛𝓼𝓪𝓽𝓲𝓵𝓲𝓽𝔂 𝓲𝓼 𝓶𝔂 𝓳𝓪𝓶 𝓲𝓷 𝓽𝓱𝓮 𝓼𝓸𝓯𝓽𝔀𝓪𝓻𝓮 𝓰𝓪𝓶𝓮. 😌"}],["$","meta","14",{"name":"twitter:description","content":"Explore personal and collaborative works by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","meta","15",{"name":"twitter:image","content":"$22"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"1280x1280"}]]
+1:null

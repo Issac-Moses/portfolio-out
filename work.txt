@@ -1,0 +1,537 @@
+2:I[8047,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"Column"]
+4:I[9818,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"ProjectCard"]
+8:I[4707,[],""]
+9:I[6423,[],""]
+3:Tc04,{"@context":"https://schema.org","@type":"CollectionPage","headline":"My projects","description":"Design and dev projects by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓","url":"https://demo.magic-portfolio.com/projects","image":"demo.magic-portfolio.com/og?title=Design%20Projects","author":{"@type":"Person","name":"𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"},"hasPart":[{"@type":"CreativeWork","headline":"𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦","description":"𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚘𝚏 𝚊 𝚏𝚕𝚎𝚡𝚒𝚋𝚕𝚎 𝚊𝚗𝚍 𝚑𝚒𝚐𝚑𝚕𝚢 𝚌𝚞𝚜𝚝𝚘𝚖𝚒𝚣𝚊𝚋𝚕𝚎 𝙰𝙸 𝚖𝚘𝚍𝚎𝚕 𝚏𝚘𝚛 𝙵𝚊𝚌𝚎 𝚁𝚎𝚌𝚘𝚐𝚗𝚒𝚝𝚒𝚘𝚗 𝚝𝚘 𝚒𝚖𝚙𝚛𝚘𝚟𝚎 𝚎𝚏𝚏𝚒𝚌𝚎𝚗𝚌𝚢 𝚘𝚏 𝙰𝚌𝚌𝚞𝚛𝚊𝚌𝚢.","url":"https://demo.magic-portfolio.com/projects/Face-Recognition","image":"demo.magic-portfolio.com/"},{"@type":"CreativeWork","headline":"𝐄𝐦𝐛𝐞𝐝𝐝𝐞𝐝 𝐂 𝐚𝐧𝐝 𝐋𝐢𝐧𝐮𝐱 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬","description":"𝙴𝚡𝚙𝚕𝚘𝚛𝚎 𝚝𝚑𝚎 𝚎𝚗𝚍𝚞𝚛𝚒𝚗𝚐 𝚍𝚎𝚋𝚊𝚝𝚎 𝚋𝚎𝚝𝚠𝚎𝚎𝚗 𝚞𝚜𝚒𝚗𝚐 𝚜𝚙𝚊𝚌𝚎𝚜 𝚊𝚗𝚍 𝚝𝚊𝚋𝚜 𝚏𝚘𝚛 𝚌𝚘𝚍𝚎 𝚒𝚗𝚍𝚎𝚗𝚝𝚊𝚝𝚒𝚘𝚗, 𝚊𝚗𝚍 𝚠𝚑𝚢 𝚝𝚑𝚒𝚜 𝚌𝚑𝚘𝚒𝚌𝚎 𝚖𝚊𝚝𝚝𝚎𝚛𝚜 𝚖𝚘𝚛𝚎 𝚝𝚑𝚊𝚗 𝚢𝚘𝚞 𝚖𝚒𝚐𝚑𝚝 𝚝𝚑𝚒𝚗𝚔.","url":"https://demo.magic-portfolio.com/projects/Linux-Os","image":"demo.magic-portfolio.com/"},{"@type":"CreativeWork","headline":"𝐀 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐏𝐨𝐫𝐭𝐟𝐨𝐥𝐢𝐨 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤 𝐟𝐨𝐫 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 𝐋𝐞𝐯𝐞𝐫𝐚𝐠𝐢𝐧𝐠 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐚𝐧𝐝 𝐓𝐚𝐢𝐥𝐰𝐢𝐧𝐝 𝐂𝐒𝐒","description":"𝚂𝚑𝚘𝚠 𝚘𝚏𝚏 𝚢𝚘𝚞𝚛 𝚍𝚎𝚟 𝚜𝚔𝚒𝚕𝚕𝚜 𝚒𝚗 𝚜𝚝𝚢𝚕𝚎 𝚠𝚒𝚝𝚑 𝚊 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚝𝚑𝚊𝚝’𝚜 𝚏𝚊𝚜𝚝𝚎𝚛 𝚝𝚑𝚊𝚗 𝚢𝚘𝚞𝚛 𝚌𝚘𝚏𝚏𝚎𝚎 𝚔𝚒𝚌𝚔. 𝙽𝚎𝚡𝚝.𝚓𝚜 + 𝚃𝚊𝚒𝚕𝚠𝚒𝚗𝚍 𝙲𝚂𝚂 = 𝚜𝚕𝚒𝚌𝚔, 𝚜𝚑𝚒𝚗𝚢, 𝚊𝚗𝚍 𝚜𝚘 𝚌𝚞𝚜𝚝𝚘𝚖𝚒𝚣𝚊𝚋𝚕𝚎 𝚢𝚘𝚞𝚛 𝚙𝚛𝚘𝚓𝚎𝚌𝚝𝚜 𝚠𝚒𝚕𝚕 𝚙𝚛𝚊𝚌𝚝𝚒𝚌𝚊𝚕𝚕𝚢 𝚠𝚒𝚗𝚔 𝚊𝚝 𝚛𝚎𝚌𝚛𝚞𝚒𝚝𝚎𝚛𝚜","url":"https://demo.magic-portfolio.com/projects/Portfolio","image":"demo.magic-portfolio.com/"}]}5:T1c83,
+
+# 𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Background](#background)  
+   - [Facial Recognition](#facial-recognition)  
+   - [Privacy Concerns](#privacy-concerns)  
+   - [Federated Learning](#federated-learning)  
+4. [System Architecture](#system-architecture)  
+5. [Implementation Details](#implementation-details)  
+   - [1. Local Model Training](#1-local-model-training)  
+   - [2. Federated Aggregation](#2-federated-aggregation)  
+   - [3. Model Deployment](#3-model-deployment)  
+   - [4. Attendance Logging](#4-attendance-logging)  
+6. [Challenges and Solutions](#challenges-and-solutions)  
+7. [Evaluation Metrics](#evaluation-metrics)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+Facial recognition-based attendance systems are increasingly adopted in educational institutions and workplaces for their efficiency and automation. However, centralizing facial data raises **serious privacy concerns**.  
+
+**Federated Learning (FL)** allows multiple clients (e.g., user devices or edge servers) to collaboratively train a global machine learning model **without sharing raw data**, making it an ideal solution for privacy-preserving systems.  
+
+This project proposes a **federated learning-based facial recognition system** for attendance tracking, which ensures user privacy while maintaining high accuracy in recognition.
+
+---
+
+## Motivation
+
+- **Privacy Preservation:** Sensitive facial images remain on local devices.  
+- **Data Security:** Reduces risk of data breaches by avoiding centralized storage.  
+- **Compliance:** Aligns with regulations like GDPR, HIPAA, and other privacy laws.  
+- **Decentralized Learning:** Enables scalable training across multiple devices.  
+
+---
+
+## Background
+
+### Facial Recognition
+
+Facial recognition involves detecting, encoding, and matching faces in images or video frames. Typical steps include:
+
+1. **Face Detection:** Identify faces using methods like Haar Cascades, MTCNN, or YOLO.  
+2. **Feature Extraction:** Convert detected faces into numerical embeddings using CNNs (e.g., FaceNet, ArcFace).  
+3. **Matching and Classification:** Compare embeddings with registered user database to identify individuals.
+
+### Privacy Concerns
+
+- Centralized databases of facial images are vulnerable to **hacking, misuse, and leaks**.  
+- Sharing raw data across servers violates user privacy.  
+- Regulatory compliance demands minimal exposure of personal data.
+
+### Federated Learning
+
+Federated Learning is a decentralized ML approach where:
+
+- Each client trains a local model using its own data.  
+- Clients share **model updates (gradients or weights)** instead of raw data.  
+- A central server aggregates updates to form a global model.  
+- The global model is redistributed to clients iteratively.  
+
+**Advantages for Facial Recognition:**
+
+- No raw images leave the client device.  
+- Training is distributed, reducing server computational load.  
+- Enables continuous learning without compromising privacy.
+
+---
+
+## System Architecture
+  ```bash
+    Client Devices (Edge Nodes)
+    │
+    ├── Local Face Detection & Recognition Model
+    ├── Local Training with Private Data
+    │
+    └── Sends Model Updates → Central Server (Federated Aggregator)
+    │
+    ├── Aggregates Weights (FedAvg / FedProx)
+    └── Updates Global Model
+    │
+    └── Distributes Updated Model to Clients
+  ```
+
+  
+- **Client Devices:** Smartphones, tablets, or local terminals where facial data is captured.  
+- **Federated Aggregator:** Server aggregates model weights and coordinates training rounds.  
+- **Global Model:** Continuously improved facial recognition model shared with all clients.  
+- **Attendance Logging:** After identification, attendance is recorded in a secure database.
+
+---
+
+## Implementation Details
+
+### 1. Local Model Training
+
+- Each client device collects facial images of users locally.  
+- Preprocessing includes resizing, normalization, and augmentation.  
+- Local training uses a **CNN-based model** (e.g., MobileFaceNet for efficiency).  
+- Loss function: **Cross-Entropy** or **Triplet Loss** for embeddings.  
+
+### 2. Federated Aggregation
+
+- Model weights are transmitted (not raw data) to the central server.  
+- Aggregation strategies:
+  - **FedAvg:** Weighted averaging of local model updates.  
+  - **FedProx:** Handles non-IID data across clients.  
+- After aggregation, the updated global model is redistributed.
+
+### 3. Model Deployment
+
+- The global model is deployed on client devices for inference.  
+- Edge inference ensures **low latency** for real-time attendance recognition.  
+- Model updates are periodic or triggered by new data availability.
+
+### 4. Attendance Logging
+
+- Recognized faces trigger secure logging of attendance.  
+- Optional integration with **Google Sheets**, **SQL databases**, or **cloud storage**.  
+- All logs exclude sensitive image data, storing only anonymized identifiers and timestamps.
+
+
+---
+
+## Evaluation Metrics
+
+- **Accuracy:** Correct identification of faces.  
+- **Precision, Recall, F1-Score:** For each class/user.  
+- **Communication Efficiency:** Bytes transferred per training round.  
+- **Latency:** Time for recognition and attendance logging.  
+- **Privacy Metrics:** Ensuring no raw facial images leave client devices.
+
+---
+
+## Use Cases
+
+1. **Educational Institutions:** Secure and automated student attendance.  
+2. **Corporate Offices:** Privacy-preserving employee attendance monitoring.  
+3. **Event Management:** Tracking participants without centralizing sensitive data.  
+4. **Healthcare Facilities:** Staff identification without compromising patient data privacy.  
+
+---
+
+## Conclusion
+
+The **federated learning-based facial recognition system** provides a **privacy-preserving, decentralized solution** for attendance tracking. By keeping sensitive facial data local and only sharing model updates, the system ensures security, scalability, and compliance with privacy regulations while maintaining high recognition accuracy.  
+
+This framework demonstrates that **privacy and AI can coexist**, enabling modern attendance systems without sacrificing personal data protection.
+
+---
+
+## References
+
+1. Kairouz, P., McMahan, H. B., et al., *Advances and Open Problems in Federated Learning*, Foundations and Trends in Machine Learning, 2021.  
+2. Schroff, F., Kalenichenko, D., & Philbin, J., *FaceNet: A Unified Embedding for Face Recognition and Clustering*, CVPR, 2015.  
+3. Bonawitz, K., Eichner, H., et al., *Federated Learning: Challenges, Methods, and Future Directions*, IEEE, 2019.  
+4. McMahan, H. B., et al., *Communication-Efficient Learning of Deep Networks from Decentralized Data*, AISTATS, 2017.  
+5. Google AI Blog, *Federated Learning for On-Device AI*, 2017.  
+6. ArcFace: Deng, Jiankang, et al., *ArcFace: Additive Angular Margin Loss for Deep Face Recognition*, CVPR, 2019.  
+
+6:T1889,# A Dynamic Portfolio Framework for Developers Leveraging Next.js and Tailwind CSS
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Motivation](#motivation)  
+3. [Technology Stack](#technology-stack)  
+4. [Architecture](#architecture)  
+5. [Key Features](#key-features)  
+6. [Implementation Details](#implementation-details)  
+   - [1. Next.js for Dynamic Rendering](#1-nextjs-for-dynamic-rendering)  
+   - [2. Tailwind CSS for Design Efficiency](#2-tailwind-css-for-design-efficiency)  
+   - [3. Component-Based Architecture](#3-component-based-architecture)  
+   - [4. Responsive and Interactive UI](#4-responsive-and-interactive-ui)  
+   - [5. Deployment and Optimization](#5-deployment-and-optimization)  
+7. [Challenges and Solutions](#challenges-and-solutions)  
+8. [Use Cases](#use-cases)  
+9. [Conclusion](#conclusion)  
+10. [References](#references)  
+
+---
+
+## Introduction
+
+In the modern software development ecosystem, a developer's portfolio is a critical tool to showcase skills, projects, and professional achievements. Traditional portfolios are often static, time-consuming to update, and lack interactivity.  
+
+This project proposes a **dynamic portfolio framework** built using **Next.js** and **Tailwind CSS**, enabling developers to create responsive, visually appealing, and easily maintainable portfolios. The framework emphasizes **reusability, scalability, and automation**.
+
+---
+
+## Motivation
+
+- **Dynamic Content Updates:** Developers frequently update their project list and skills; dynamic frameworks reduce manual edits.  
+- **Responsive Design:** Modern portfolios must work seamlessly across devices.  
+- **Maintainability:** Component-based design ensures easier updates and scalability.  
+- **Modern Aesthetic:** Developers want portfolios that reflect modern UI/UX trends.
+
+---
+
+## Technology Stack
+
+- **Next.js:** React-based framework for server-side rendering and static site generation.  
+- **Tailwind CSS:** Utility-first CSS framework for rapid, customizable styling.  
+- **React:** For building reusable UI components.  
+- **Vercel / Netlify:** Cloud platforms for deployment with automatic CI/CD.  
+- **Optional Tools:** Framer Motion (animations), TypeScript (type safety), React Icons, Google Fonts.
+
+---
+
+## Architecture
+
+The framework follows a **modular architecture**:
+
+  ```bash
+      Portfolio Framework
+      │
+      ├── Components
+      │ ├── Header
+      │ ├── Hero Section
+      │ ├── Project Cards
+      │ ├── Experience Section
+      │ ├── Contact Form
+      │
+      ├── Pages
+      │ ├── index.js
+      │ ├── projects.js
+      │ ├── about.js
+      │
+      ├── Styles
+      │ └── Tailwind Config
+      │
+      ├── Data
+      │ └── JSON or Markdown for dynamic content
+
+  ```
+  
+- **Components:** Reusable UI elements.  
+- **Pages:** Route-based rendering using Next.js.  
+- **Data Layer:** Dynamic content can be fetched from JSON files, Markdown, or APIs.  
+
+---
+
+## Key Features
+
+1. **Dynamic Project Rendering:** Add projects via JSON/Markdown without changing core code.  
+2. **Responsive Design:** Tailwind ensures mobile-first, cross-device compatibility.  
+3. **Modern UI/UX:** Smooth animations, gradient text, and interactive cards.  
+4. **SEO and Performance Optimized:** Next.js handles SSR and SSG for better search rankings.  
+5. **Dark and Light Mode Support:** Toggleable themes with minimal effort.  
+6. **Easy Deployment:** Compatible with Vercel or Netlify for continuous deployment.  
+7. **Analytics Integration:** Optional Google Analytics or Plausible integration.  
+
+---
+
+## Implementation Details
+
+### 1. Next.js for Dynamic Rendering
+- Supports **Static Site Generation (SSG)** for faster load times.  
+- Supports **Server-Side Rendering (SSR)** for dynamic data fetching.  
+- Route-based structure allows intuitive page navigation.
+
+### 2. Tailwind CSS for Design Efficiency
+- Utility-first classes reduce the need for custom CSS.  
+- Supports dark mode, responsive layouts, gradients, and shadows.  
+- Minimal build size due to **tree-shaking**.
+
+### 3. Component-Based Architecture
+- Components like HeroSection, ProjectCard, and ExperienceCard are **reusable**.  
+- Props-driven architecture allows easy customization.  
+- Enables **future scalability** by adding new sections or features.
+
+### 4. Responsive and Interactive UI
+- Mobile-first design ensures usability across devices.  
+- Smooth animations and hover effects via **Framer Motion** or Tailwind utilities.  
+- Interactive elements like project cards with links, images, and descriptions.
+
+### 5. Deployment and Optimization
+- Optimized images using Next.js **Image component**.  
+- Built-in code splitting and lazy loading for performance.  
+- Supports CI/CD pipelines for automatic deployment on pushes.  
+---
+
+## Use Cases
+
+1. **Developer Portfolios:** Showcase projects, skills, and experience dynamically.  
+2. **Agency or Freelancer Profiles:** Present team projects and case studies.  
+3. **Open Source Contributors:** Highlight contributions with GitHub integration.  
+4. **Personal Branding:** Use dynamic sections for blogs, testimonials, and contact forms.  
+
+---
+
+## Conclusion
+
+The **Dynamic Portfolio Framework** using **Next.js** and **Tailwind CSS** allows developers to create professional, modern, and maintainable portfolios. By leveraging **dynamic content rendering, responsive design, and component-based architecture**, this framework provides an efficient solution for developers who want to showcase their work effectively and interactively.
+
+---
+
+## References
+
+1. Vercel, *Next.js Documentation*, [https://nextjs.org/docs](https://nextjs.org/docs)  
+2. Tailwind Labs, *Tailwind CSS Documentation*, [https://tailwindcss.com/docs](https://tailwindcss.com/docs)  
+3. React, *Official Documentation*, [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)  
+4. Framer Motion, *Animation Library for React*, [https://www.framer.com/motion/](https://www.framer.com/motion/)  
+5. Smashing Magazine, *Best Practices for Developer Portfolios*, 2023.  
+6. Netlify Docs, *Deploying Next.js Apps*, [https://docs.netlify.com](https://docs.netlify.com)  
+
+7:T2195,
+# 𝐄𝐦𝐛𝐞𝐝𝐝𝐞𝐝 𝐂 𝐚𝐧𝐝 𝐋𝐢𝐧𝐮𝐱 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬 
+
+Embedded systems are specialized computing systems that perform dedicated functions within larger mechanical or electrical systems. They are widely used in consumer electronics, automotive systems, industrial machines, medical devices, and more. Developing software for embedded systems often involves programming in **Embedded C** and leveraging **Embedded Linux** for complex, scalable, and connected devices. However, both domains come with unique challenges that developers must address.
+
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)  
+2. [Embedded C Challenges](#embedded-c-challenges)  
+   - [1. Hardware Constraints](#hardware-constraints)  
+   - [2. Memory Management](#memory-management)  
+   - [3. Real-Time Constraints](#real-time-constraints)  
+   - [4. Peripheral Interfacing](#peripheral-interfacing)  
+   - [5. Debugging and Testing](#debugging-and-testing)  
+   - [6. Code Portability](#code-portability)  
+   - [7. Low-Level Optimization](#low-level-optimization)  
+   - [8. Interrupt Handling](#interrupt-handling)  
+   - [9. Power Management](#power-management)  
+3. [Embedded Linux Challenges](#embedded-linux-challenges)  
+   - [1. Boot Time Optimization](#boot-time-optimization)  
+   - [2. Device Driver Development](#device-driver-development)  
+   - [3. File System Optimization](#file-system-optimization)  
+   - [4. Power Management in Linux](#power-management-in-linux)  
+   - [5. Cross-Compilation and Toolchains](#cross-compilation-and-toolchains)  
+   - [6. Kernel Customization](#kernel-customization)  
+   - [7. Real-Time Linux Constraints](#real-time-linux-constraints)  
+   - [8. Security Challenges](#security-challenges)  
+4. [Integration Challenges](#integration-challenges)  
+5. [Best Practices](#best-practices)  
+6. [Conclusion](#conclusion)  
+7. [References](#references)
+
+---
+
+## Introduction
+
+Embedded C is the most widely used programming language for microcontroller-based systems. It offers low-level hardware control, efficiency, and deterministic behavior necessary for real-time systems.  
+
+Embedded Linux, on the other hand, provides an open-source, scalable operating system for embedded devices. It supports networking, file systems, multitasking, and high-level programming.  
+
+Combining Embedded C and Linux allows developers to build complex, connected, and efficient embedded solutions. However, it introduces several **challenges** due to hardware limitations, real-time requirements, and system complexity.
+
+---
+
+## Embedded C Challenges
+
+### 1. Hardware Constraints
+Embedded systems often operate on microcontrollers or microprocessors with limited resources:
+- **Memory:** Small RAM and flash storage require careful code design.
+- **Processing Power:** Limited CPU frequency restricts computationally heavy operations.
+- **Example:** Running a real-time temperature control algorithm on an 8-bit MCU with 2 KB RAM.
+
+### 2. Memory Management
+- Embedded C lacks dynamic memory safety like modern languages.
+- Memory leaks and fragmentation can occur in long-running systems.
+- Developers often use **static memory allocation** to avoid heap fragmentation.
+
+### 3. Real-Time Constraints
+- Many embedded systems must respond to events within strict time limits.
+- Delays can cause system failure, especially in industrial automation or automotive systems.
+- Real-time operating system (RTOS) integration often becomes necessary.
+
+### 4. Peripheral Interfacing
+- Embedded systems interface with sensors, actuators, and communication modules (UART, SPI, I2C).
+- Each peripheral has its protocol and timing requirements.
+- Example: Reading data from an I2C temperature sensor while ensuring ADC sampling continuity.
+
+### 5. Debugging and Testing
+- Debugging on hardware is challenging due to limited interfaces.
+- Tools like **JTAG**, **serial consoles**, and oscilloscopes are commonly used.
+- Simulators can help, but they may not fully replicate real hardware behavior.
+
+### 6. Code Portability
+- Embedded C code often depends on specific MCU architecture.
+- Porting code across different MCUs requires significant adaptation.
+
+### 7. Low-Level Optimization
+- High-performance embedded systems often require manual **bitwise operations**, **register manipulations**, and **cycle-accurate code**.
+- Example: Writing optimized PWM signal generation for motor control.
+
+### 8. Interrupt Handling
+- Interrupt Service Routines (ISRs) must be fast and efficient.
+- Nested interrupts and priority management are complex in multitasking systems.
+
+### 9. Power Management
+- Battery-operated devices require energy-efficient programming.
+- Techniques include sleep modes, clock gating, and minimizing CPU wake-ups.
+
+---
+
+## Embedded Linux Challenges
+
+### 1. Boot Time Optimization
+- Linux kernels are large, and embedded devices may need **fast boot** (milliseconds instead of seconds).
+- Techniques: Using **initramfs**, reducing unnecessary drivers, and enabling **early userspace**.
+
+### 2. Device Driver Development
+- Embedded Linux often requires custom drivers for proprietary hardware.
+- Challenges:
+  - Kernel API complexity
+  - Synchronization and concurrency
+  - Interrupt handling
+  - Memory mapping (DMA)
+
+### 3. File System Optimization
+- Embedded systems often use **flash memory** or **SD cards**.
+- Choosing the correct filesystem (JFFS2, UBIFS, EXT4) affects wear-leveling and performance.
+
+### 4. Power Management in Linux
+- Linux supports **dynamic voltage and frequency scaling (DVFS)** and **suspend/resume**.
+- Embedded devices often need custom hooks for peripherals to minimize power.
+
+### 5. Cross-Compilation and Toolchains
+- Linux kernels are compiled for specific architectures (ARM, MIPS, RISC-V).
+- Using **cross-compilers**, managing libraries, and resolving dependency conflicts is challenging.
+
+### 6. Kernel Customization
+- Embedded Linux often requires **stripping down the kernel** to reduce footprint.
+- Removing unused modules improves performance but increases complexity.
+
+### 7. Real-Time Linux Constraints
+- Standard Linux is not deterministic.
+- Solutions:
+  - **PREEMPT-RT patch**
+  - **Xenomai**
+  - Custom schedulers for real-time guarantees
+
+### 8. Security Challenges
+- Embedded Linux devices are often connected (IoT devices), increasing attack surface.
+- Security considerations include:
+  - Secure boot
+  - Encrypted storage
+  - Network hardening
+  - Regular patching
+
+---
+
+## Integration Challenges
+
+Combining Embedded C and Embedded Linux in a single project can be challenging:
+- Synchronization between low-level C code and Linux drivers.
+- Managing **real-time tasks in C** alongside Linux user-space processes.
+- Interfacing hardware modules with Linux via **sysfs**, **ioctl**, or **character devices**.
+
+Example:
+- A motor controller written in Embedded C running on a microcontroller communicates with a Linux-based monitoring dashboard via UART or SPI.
+
+---
+
+## Best Practices
+
+1. Use modular and layered design to separate hardware and application logic.  
+2. Optimize memory usage and minimize dynamic allocation in Embedded C.  
+3. Apply rigorous testing on simulators and real hardware.  
+4. Use **version-controlled cross-compilation environments** for Linux development.  
+5. Profile code to identify bottlenecks and optimize critical paths.  
+6. Leverage RTOS or real-time patches for time-sensitive Linux tasks.  
+7. Document peripheral protocols and driver interactions carefully.
+
+---
+
+## Conclusion
+
+Developing embedded systems using Embedded C and Embedded Linux presents a spectrum of challenges ranging from **hardware limitations**, **real-time constraints**, **memory optimization**, to **system security**. Addressing these challenges requires a deep understanding of both **low-level programming** and **high-level system integration**. With best practices, careful design, and modern tools, developers can build robust, efficient, and scalable embedded systems.
+
+---
+
+## References
+
+1. Jack Ganssle, *The Art of Designing Embedded Systems*, 3rd Edition, Newnes, 2008.  
+2. David E. Simon, *An Embedded Software Primer*, 2nd Edition, Pearson, 2006.  
+3. Linux Foundation, *Embedded Linux Development*, [https://www.linuxfoundation.org](https://www.linuxfoundation.org)  
+4. Michael Barr, *Programming Embedded Systems in C and C++*, O'Reilly Media, 1999.  
+5. R. S. Pressman, *Software Engineering: A Practitioner’s Approach*, 9th Edition, McGraw-Hill, 2014.  
+6. ARM Ltd, *ARM Cortex-M Microcontroller Developer Guide*, 2020.  
+
+---
+
+0:["6HNJMjS_1nHVfFmuoa_1a",[[["",{"children":["work",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["work",{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"maxWidth":"m","children":[["$","script",null,{"type":"application/ld+json","suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"$3"}}],["$","$L2",null,{"fillWidth":true,"gap":"xl","marginBottom":"40","paddingX":"l","children":["$","div",null,{"className":"display-grid columns-1 g-32","children":[["$","$L4","Face-Recognition",{"priority":true,"href":"/work/Face-Recognition","images":["/projects/Face1.mp4"],"title":"𝐅𝐞𝐝𝐞𝐫𝐚𝐭𝐞𝐝 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐜𝐲-𝐏𝐫𝐞𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐚𝐥 𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 𝐀𝐭𝐭𝐞𝐧𝐝𝐚𝐧𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦","description":"𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚘𝚏 𝚊 𝚏𝚕𝚎𝚡𝚒𝚋𝚕𝚎 𝚊𝚗𝚍 𝚑𝚒𝚐𝚑𝚕𝚢 𝚌𝚞𝚜𝚝𝚘𝚖𝚒𝚣𝚊𝚋𝚕𝚎 𝙰𝙸 𝚖𝚘𝚍𝚎𝚕 𝚏𝚘𝚛 𝙵𝚊𝚌𝚎 𝚁𝚎𝚌𝚘𝚐𝚗𝚒𝚝𝚒𝚘𝚗 𝚝𝚘 𝚒𝚖𝚙𝚛𝚘𝚟𝚎 𝚎𝚏𝚏𝚒𝚌𝚎𝚗𝚌𝚢 𝚘𝚏 𝙰𝚌𝚌𝚞𝚛𝚊𝚌𝚢.","content":"$5","avatars":[{"src":"/about/me.jpg"},{"src":"/about/Nambi.jpg"}],"link":"https://drive.google.com/file/d/1zJaOWc7xN0MN-YozUJKEcsSajiz9jQh4/view?usp=sharing","github":"","showCaseStudy":true}],["$","$L4","Portfolio",{"priority":true,"href":"/work/Portfolio","images":["/projects/Portfolio.mp4"],"title":"𝐀 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐏𝐨𝐫𝐭𝐟𝐨𝐥𝐢𝐨 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤 𝐟𝐨𝐫 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 𝐋𝐞𝐯𝐞𝐫𝐚𝐠𝐢𝐧𝐠 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐚𝐧𝐝 𝐓𝐚𝐢𝐥𝐰𝐢𝐧𝐝 𝐂𝐒𝐒","description":"𝚂𝚑𝚘𝚠 𝚘𝚏𝚏 𝚢𝚘𝚞𝚛 𝚍𝚎𝚟 𝚜𝚔𝚒𝚕𝚕𝚜 𝚒𝚗 𝚜𝚝𝚢𝚕𝚎 𝚠𝚒𝚝𝚑 𝚊 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚝𝚑𝚊𝚝’𝚜 𝚏𝚊𝚜𝚝𝚎𝚛 𝚝𝚑𝚊𝚗 𝚢𝚘𝚞𝚛 𝚌𝚘𝚏𝚏𝚎𝚎 𝚔𝚒𝚌𝚔. 𝙽𝚎𝚡𝚝.𝚓𝚜 + 𝚃𝚊𝚒𝚕𝚠𝚒𝚗𝚍 𝙲𝚂𝚂 = 𝚜𝚕𝚒𝚌𝚔, 𝚜𝚑𝚒𝚗𝚢, 𝚊𝚗𝚍 𝚜𝚘 𝚌𝚞𝚜𝚝𝚘𝚖𝚒𝚣𝚊𝚋𝚕𝚎 𝚢𝚘𝚞𝚛 𝚙𝚛𝚘𝚓𝚎𝚌𝚝𝚜 𝚠𝚒𝚕𝚕 𝚙𝚛𝚊𝚌𝚝𝚒𝚌𝚊𝚕𝚕𝚢 𝚠𝚒𝚗𝚔 𝚊𝚝 𝚛𝚎𝚌𝚛𝚞𝚒𝚝𝚎𝚛𝚜","content":"$6","avatars":[{"src":"/about/me.jpg"}],"link":"https://youtu.be/1VwgvmCC6mE","github":"https://github.com/Issac-Moses/Issac-Moses-Portfolio","showCaseStudy":true}],["$","$L4","Linux-Os",{"priority":false,"href":"/work/Linux-Os","images":["/projects/OS.mp4"],"title":"𝐄𝐦𝐛𝐞𝐝𝐝𝐞𝐝 𝐂 𝐚𝐧𝐝 𝐋𝐢𝐧𝐮𝐱 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬","description":"𝙴𝚡𝚙𝚕𝚘𝚛𝚎 𝚝𝚑𝚎 𝚎𝚗𝚍𝚞𝚛𝚒𝚗𝚐 𝚍𝚎𝚋𝚊𝚝𝚎 𝚋𝚎𝚝𝚠𝚎𝚎𝚗 𝚞𝚜𝚒𝚗𝚐 𝚜𝚙𝚊𝚌𝚎𝚜 𝚊𝚗𝚍 𝚝𝚊𝚋𝚜 𝚏𝚘𝚛 𝚌𝚘𝚍𝚎 𝚒𝚗𝚍𝚎𝚗𝚝𝚊𝚝𝚒𝚘𝚗, 𝚊𝚗𝚍 𝚠𝚑𝚢 𝚝𝚑𝚒𝚜 𝚌𝚑𝚘𝚒𝚌𝚎 𝚖𝚊𝚝𝚝𝚎𝚛𝚜 𝚖𝚘𝚛𝚎 𝚝𝚑𝚊𝚗 𝚢𝚘𝚞 𝚖𝚒𝚐𝚑𝚝 𝚝𝚑𝚒𝚗𝚔.","content":"$7","avatars":[{"src":"/about/me.jpg"}],"link":"https://drive.google.com/file/d/1kw_39xv9BokNQdhTKuOkwyrSTS47GNKL/view?usp=sharing","github":"","showCaseStudy":true}]]}]}]]}],null],null],null]},[null,["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","work","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/15321eadbcfb15cf.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/4327065330a0b563.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c96b3e5feff09199.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/838e13b95c2622d4.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a5c471f6f9fb2804.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/e578cf952a0222b2.css","precedence":"next","crossOrigin":"$undefined"}]],"$La"],null],null],["$Lb",null]]]]
+c:I[1162,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"Flex"]
+e:I[6995,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"ToastProvider"]
+f:I[124,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"Background"]
+10:I[9295,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"Header"]
+11:I[1844,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"RouteGuard"]
+12:I[2313,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"PageTransition"]
+13:I[2060,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"Text"]
+14:I[9316,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"Heading"]
+15:I[9511,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"SmartLink"]
+16:I[7868,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"IconButton"]
+17:I[4093,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"CustomCursor"]
+18:I[4158,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"ScreenEffects"]
+19:I[8411,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"SoundEffects"]
+1a:I[6620,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","534","static/chunks/app/work/page-37bb07e529b98908.js"],"ThemeCustomizer"]
+d:T4c9,
+              (function() {
+                try {
+                  var stored = localStorage.getItem('themeConfig');
+                  if (stored) {
+                    var parsed = JSON.parse(stored);
+                    var root = document.documentElement;
+                    if (parsed.border) root.setAttribute('data-border', parsed.border);
+                    if (parsed.brand) root.setAttribute('data-brand', parsed.brand);
+                    if (parsed.accent) root.setAttribute('data-accent', parsed.accent);
+                    if (parsed.neutral) root.setAttribute('data-neutral', parsed.neutral);
+                    root.setAttribute('data-theme', 'dark');
+                    if (parsed.solid) root.setAttribute('data-solid', parsed.solid);
+                    if (parsed.solidStyle) root.setAttribute('data-solid-style', parsed.solidStyle);
+                    if (parsed.transition) root.setAttribute('data-transition', parsed.transition);
+                    if (parsed.scaling) root.setAttribute('data-scaling', parsed.scaling);
+                    if (parsed.surface) root.setAttribute('data-surface', parsed.surface);
+                  }
+                } catch (e) {}
+              })();
+            a:["$","$Lc",null,{"as":"html","lang":"en","background":"page","data-neutral":"slate","data-brand":"aqua","data-accent":"aqua","data-solid":"contrast","data-solid-style":"flat","data-theme":"dark","data-border":"rounded","data-surface":"translucent","data-transition":"micro","className":"__variable_f367f3 __variable_a06722","style":{"cursor":"none"},"children":["$","$L2",null,{"style":{"minHeight":"100vh"},"as":"body","fillWidth":true,"margin":"0","padding":"0","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{"children":[["$","$Lf",null,{"mask":{"cursor":true,"x":0,"y":0,"radius":85},"gradient":{"display":true,"x":60,"y":5,"width":130,"height":130,"tilt":-20,"colorStart":"brand-background-strong","colorEnd":"static-transparent","opacity":50},"dots":{"display":true,"color":"brand-on-background-weak","size":2,"opacity":25},"grid":{"display":false,"color":"neutral-alpha-weak","width":"$undefined","height":"$undefined","opacity":100},"lines":{"display":true,"opacity":20}}],["$","$Lc",null,{"fillWidth":true,"minHeight":"16"}],["$","$L10",null,{}],["$","$Lc",null,{"position":"relative","zIndex":0,"fillWidth":true,"paddingY":"l","paddingX":"l","horizontal":"center","flex":1,"children":["$","$Lc",null,{"horizontal":"center","fillWidth":true,"minHeight":"0","children":["$","$L11",null,{"children":["$","$L12",null,{"children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$L2",null,{"as":"section","fill":true,"center":true,"paddingBottom":"160","children":[["$","$L13",null,{"marginBottom":"s","variant":"display-strong-xl","children":"404"}],["$","$L14",null,{"marginBottom":"l","variant":"display-default-xs","children":"Page Not Found"}],["$","$L13",null,{"onBackground":"neutral-weak","children":"The page you are looking for does not exist."}]]}],"notFoundStyles":[]}]}]}]}]}],["$","$Lc",null,{"as":"footer","position":"relative","fillWidth":true,"padding":"8","horizontal":"center","mobileDirection":"column","children":[["$","$Lc",null,{"className":"Footer_mobile__TYNqJ","maxWidth":"m","paddingY":"8","paddingX":"16","gap":"16","horizontal":"space-between","vertical":"center","children":[["$","$L13",null,{"variant":"body-default-s","onBackground":"neutral-strong","children":[["$","$L13",null,{"onBackground":"neutral-weak","children":["© ",2026," /"]}],["$","$L13",null,{"paddingX":"4","children":"𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","$L13",null,{"onBackground":"neutral-weak","children":["/ My"," ",["$","$L15",null,{"style":{"marginLeft":"-0.125rem"},"href":"hhttps://github.com/Issac-Moses/Issac-Moses-Portfolio","children":"PortFolio"}]]}]]}],["$","$Lc",null,{"gap":"16","children":[["$","$L16","𝙶𝚒𝚝𝙷𝚞𝚋",{"href":"https://github.com/Issac-Moses","icon":"github","tooltip":"𝙶𝚒𝚝𝙷𝚞𝚋","size":"s","variant":"ghost"}],["$","$L16","𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗",{"href":"https://www.linkedin.com/in/i%EF%BD%93%EF%BD%93-a-c-m-%E5%8F%A3%EF%BD%93%E3%83%A2%EF%BD%93-d-12837831b/","icon":"linkedin","tooltip":"𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗","size":"s","variant":"ghost"}],"",["$","$L16","𝙴𝚖𝚊𝚒𝚕",{"href":"mailto:issacmoses19082005@gmail.com","icon":"email","tooltip":"𝙴𝚖𝚊𝚒𝚕","size":"s","variant":"ghost"}]]}]]}],["$","$Lc",null,{"height":"80","show":"s"}]]}],["$","$L17",null,{}],["$","$L18",null,{}],["$","$L19",null,{}],["$","$L1a",null,{}]]}]]}]}]
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"My projects"}],["$","meta","3",{"name":"description","content":"Design and dev projects by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","meta","4",{"name":"robots","content":"index, follow"}],["$","meta","5",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","6",{"property":"og:title","content":"My projects"}],["$","meta","7",{"property":"og:description","content":"Design and dev projects by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","meta","8",{"property":"og:url","content":"https://demo.magic-portfolio.com/work/"}],["$","meta","9",{"property":"og:image","content":"https://demo.magic-portfolio.com/og?title=My%20projects"}],["$","meta","10",{"property":"og:image:alt","content":"My projects"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"My projects"}],["$","meta","14",{"name":"twitter:description","content":"Design and dev projects by 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","meta","15",{"name":"twitter:image","content":"https://demo.magic-portfolio.com/og?title=My%20projects"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"1280x1280"}]]
+1:null

@@ -1,0 +1,305 @@
+2:I[8047,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Column"]
+3:I[9316,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Heading"]
+4:I[5094,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Grid"]
+5:I[7659,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"default"]
+7:I[1214,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Mailchimp"]
+8:I[4707,[],""]
+9:I[6423,[],""]
+6:T2810,𝒯𝒽𝒾𝓈 𝒶𝓇𝓉𝒾𝒸𝓁𝑒 𝓌𝒶𝓈 𝓌𝓇𝒾𝓉𝓉𝑒𝓃 𝒾𝓃 𝒸𝑜𝓁𝓁𝒶𝒷𝑜𝓇𝒶𝓉𝒾𝑜𝓃 𝓌𝒾𝓉𝒽 
+1. [VARUNIKA B](https://www.linkedin.com/in/varunika-b-7564a4326?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bcx03aeZkTZCJV0RsWOxHDQ%3D%3D)
+2. [ISSAC MOSES D](https://www.linkedin.com/in/issacmosesd?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiWFKj8tdRT6ynKC2FNYcPw%3D%3D)
+3. [VARSHA R](https://www.linkedin.com/in/varsha-rajmohan-ba395832a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bm228iGnJRNS45YOkxCqP0A%3D%3D)
+
+
+## Table of Contents
+
+1. [Chapter 1: The False Sense of Security – A Moment of Complacency](#chapter-1-the-false-sense-of-security--a-moment-of-complacency)  
+   - [The Illusion of Control](#the-illusion-of-control)  
+   - [The Trap of "Just Fine"](#the-trap-of-just-fine)  
+   - [The Unseen Variables](#the-unseen-variables)  
+   - [The Lesson Hidden in Complacency](#the-lesson-hidden-in-complacency)  
+
+2. [Chapter 2: The Moment Everything Went Wrong – A Split Second From Disaster](#chapter-2-the-moment-everything-went-wrong--a-split-second-from-disaster)  
+   - [The Physics of Panic](#the-physics-of-panic)  
+   - [The Numbers That Didn’t Lie](#the-numbers-that-didnt-lie)  
+
+3. [Chapter 3: The Flashback That Changed Everything – When Physics Became My Lifeline](#chapter-3-the-flashback-that-changed-everything--when-physics-became-my-lifeline)  
+   - [The Equation That Suddenly Mattered](#the-equation-that-suddenly-mattered)  
+   - [The Split-Second Choice](#the-split-second-choice)  
+
+4. [Chapter 4: The Formula in Action – When Numbers Meet Reality](#chapter-4-the-formula-in-action--when-numbers-meet-reality)  
+   - [The Physics of Desperation](#the-physics-of-desperation)  
+   - [The Last-Ditch Effort](#the-last-ditch-effort)  
+
+5. [Chapter 5: The Impact – Where Physics and Fate Collide](#chapter-5-the-impact--where-physics-and-fate-collide)  
+   - [The Moment of Truth](#the-moment-of-truth)  
+   - [Three Possible Outcomes](#three-possible-outcomes)  
+   - [The Physics Lesson Cemented](#the-physics-lesson-cemented)  
+
+6. [Chapter 6: The Chilling Statistics – How Close You've Come to Disaster](#chapter-6-the-chilling-statistics--how-close-youve-come-to-disaster)  
+   - [The Fatal Margin Formula](#the-fatal-margin-formula)  
+   - [Real-World Calculation](#real-world-calculation)  
+
+7. [Chapter 7: The Lifesaving Adjustment – How I Doubled My Safety Margin](#chapter-7-the-lifesaving-adjustment--how-i-doubled-my-safety-margin)  
+   - [Why the 2-Second Rule Fails](#why-the-2-second-rule-fails)  
+   - [The Physics-Based Solution: The 4-Second Buffer](#the-physics-based-solution-the-4-second-buffer)  
+   - [The Results After 1 Year](#the-results-after-1-year)  
+
+8. [Chapter 8: The Shared Road Paradox – Why Your Safety Isn't Just in Your Hands](#chapter-8-the-shared-road-paradox--why-your-safety-isnt-just-in-your-hands)  
+   - [The Multi-Vehicle Physics Problem](#the-multi-vehicle-physics-problem)  
+   - [The 3 Defense Strategies](#the-3-defense-strategies)  
+
+9. [Chapter 9: The Road Ahead – How to Outsmart Physics and Survive the Highways](#chapter-9-the-road-ahead--how-to-outsmart-physics-and-survive-the-highways)  
+   - [The Three Laws of Crash Avoidance](#the-three-laws-of-crash-avoidance)  
+   - [The Future-Proof Driving System](#the-future-proof-driving-system)  
+
+10. [Epilogue](#epilogue)  
+
+
+# 𝙰𝚗𝚊𝚕𝚢𝚣𝚒𝚗𝚐 𝚁𝚎𝚕𝚊𝚝𝚒𝚟𝚎 𝚅𝚎𝚑𝚒𝚌𝚕𝚎 𝙳𝚢𝚗𝚊𝚖𝚒𝚌𝚜 𝚝𝚘 𝚀𝚞𝚊𝚗𝚝𝚒𝚏𝚢 𝙿𝚛𝚎-𝙸𝚖𝚙𝚊𝚌𝚝 𝚁𝚒𝚜𝚔 𝚞𝚗𝚍𝚎𝚛 𝚅𝚊𝚛𝚒𝚊𝚋𝚕𝚎 𝙱𝚛𝚊𝚔𝚎 𝙴𝚏𝚏𝚒𝚌𝚒𝚎𝚗𝚌𝚢 𝚊𝚗𝚍 𝙸𝚗𝚝𝚎𝚛-𝚅𝚎𝚑𝚒𝚌𝚞𝚕𝚊𝚛 𝚂𝚙𝚊𝚌𝚒𝚗𝚐  
+
+*July 26, 2025*  
+
+*"This article was written in collaboration with VARUNIKA B, an automotive enthusiast and physics geek."*  
+
+---
+
+## Chapter 1: The False Sense of Security – A Moment of Complacency  
+
+The sun hung lazily in the sky, casting long shadows across the highway as I settled into the rhythm of the drive. My hands rested lightly on the steering wheel, the hum of the engine a steady companion. The speedometer read 72 km/h (20 m/s)—just a hair over the limit, but nothing reckless.  
+
+Ahead of me, a red SUV cruised along, maintaining a comfortable 40-meter gap. "Plenty of space," I thought, sipping my coffee.  
+
+### The Illusion of Control  
+
+- **My Brakes Were Good** – Freshly serviced last month.  
+- **The Road Was Dry** – No rain, no ice, perfect traction.  
+- **I Was Alert** – Or so I believed.  
+
+But danger doesn’t announce itself.  
+
+### The Trap of "Just Fine"  
+
+I had driven this route a hundred times. Nothing ever happened. Why would today be different?  
+
+I wasn’t tailgating.  
+I wasn’t speeding excessively.  
+I had ABS, airbags, all the safety nets.  
+
+Yet, physics doesn’t care about confidence.  
+
+### The Unseen Variables  
+
+- **Reaction Time Lag** – Even half a second of delay meant extra meters.  
+- **The SUV’s Unknown Braking Power** – What if it stopped faster than I could?  
+- **The Deer Waiting in the Wings** – Nature’s unpredictable variable.  
+
+I glanced at my phone—just a quick check. A mistake.  
+
+### The Lesson Hidden in Complacency  
+
+Safe driving isn’t just about following rules—it’s about respecting the math behind them.  
+
+That 40-meter gap? It wasn’t just empty space. It was my margin for survival.  
+And I was about to test it.  
+
+---
+
+## Chapter 2: The Moment Everything Went Wrong – A Split Second From Disaster  
+
+The world shattered in the time it takes to blink.  
+
+One moment: cruising, relaxed, the road humming beneath me.  
+The next: **SCREECHING TIRES. FLARING BRAKE LIGHTS.**  
+
+The red SUV’s taillights exploded into twin crimson suns as it slammed to a dead stop.  
+
+### The Physics of Panic  
+
+My body reacted before my brain could:  
+
+- Foot stomped the brake pedal (muscle memory from years of driving).  
+- Hands locked the wheel (white-knuckled, death-grip tight).  
+- Eyes widened as the SUV’s rear bumper swelled in my windshield.  
+
+But physics doesn’t care about reflexes.  
+
+### The Numbers That Didn’t Lie  
+
+- **My speed:** 72 km/h (20 m/s).  
+- **Distance to impact:** 40 meters—shrinking fast.  
+- **Time to collision:** 2 seconds.  
+
+Two. Heartbeats.  
+
+---
+
+## Chapter 3: The Flashback That Changed Everything – When Physics Became My Lifeline  
+
+Time didn’t just slow—it bent.  
+
+As my car hurtled toward the SUV, my mind detonated in adrenaline. But in that chaos, a single memory froze crystal clear:  
+
+**Mr. Henderson’s physics class. Senior year. A dusty chalkboard scribbled with equations.**  
+
+*"Stopping distance equals velocity squared divided by twice the deceleration—"*  
+
+Now, it was my only hope.  
+
+---
+
+## Chapter 4: The Formula in Action – When Numbers Meet Reality  
+
+The world reduced to three things:  
+
+1. The equation flashing in my mind  
+2. The SUV's bumper filling my windshield  
+3. The deafening scream of tires  
+
+**v² / 2a = 400 / 10 = 40 meters needed**  
+But only 25 meters remained.  
+
+The numbers were merciless. I was 15 meters short.  
+
+---
+
+## Chapter 5: The Impact – Where Physics and Fate Collide  
+
+The universe held its breath for one final millisecond.  
+
+Then—  
+**CRUNCH.**  
+
+### Three Possible Outcomes  
+
+1. **The Full Collision** – What should’ve happened  
+2. **The Glancing Blow** – What nearly happened  
+3. **The Miracle Stop** – What actually happened  
+
+That day, I learned:  
+
+- Equations aren't abstract—they’re the difference between a story and a eulogy.  
+- 40 meters isn’t "plenty of space"—it’s the bare minimum.  
+- Every km/h over 70 turns your car into a guided missile.  
+
+---
+
+## Chapter 6: The Chilling Statistics – How Close You've Come to Disaster  
+
+Most drivers experience **1 near-miss per month**—they just don’t realize it.  
+
+### The Fatal Margin Formula  
+
+Where:  
+
+- **d** = Distance to obstacle (meters)  
+- **v** = Speed (m/s)  
+- **a** = Braking deceleration (m/s²)  
+- **t reaction** = Reaction time (0.5–1.5s)  
+
+If **Margin ≤ 0 → Crash**  
+
+---
+
+## Chapter 7: The Lifesaving Adjustment – How I Doubled My Safety Margin  
+
+### Why the 2-Second Rule Fails  
+
+At **100 km/h (27.8 m/s)** on a wet road:  
+- Standard following distance: **55m (2s)**  
+- Actual stopping needs: far greater.  
+
+Result: You’d crash at **97 km/h impact speed** despite "following the rules."  
+
+### The Physics-Based Solution: The 4-Second Buffer  
+
+I switched to this method:  
+
+1. **Calculate Baseline Stopping Distance**  
+   - Speed: current velocity  
+   - Deceleration: 3.5 m/s² (wet road ABS)  
+   - Reaction time: 1.5s (phone distraction)  
+
+2. **Add Safety Margin** – Multiply result by 1.5x  
+
+---
+
+## Chapter 8: The Shared Road Paradox – Why Your Safety Isn't Just in Your Hands  
+
+Even if you calculate perfectly, **93% of drivers don’t.**  
+That creates **chain-reaction crashes.**  
+
+### The 3 Defense Strategies  
+
+1. **The Escape Route Matrix** – Always keep swerving distance.  
+2. **The Speed Differential Shield** – Stay 10–15 km/h below fastest lane traffic.  
+3. **The Trucker’s Secret: Horizon Scanning** – Watch 4+ cars ahead.  
+
+---
+
+## Chapter 9: The Road Ahead – How to Outsmart Physics and Survive the Highways  
+
+### The Three Laws of Crash Avoidance  
+
+1. **The 80/20 Rule of Collisions** – 80% of crashes avoided with 20% more distance.  
+2. **The Velocity Squared Trap** – Danger grows with *v²*, not linearly.  
+3. **The Deceleration Deception** – Real braking distance is always worse than specs.  
+
+### The Future-Proof Driving System  
+
+- **Step 1:** Pre-Drive Checklist (tires, brakes, load)  
+- **Step 2:** Dynamic Following Algorithm  
+- **Step 3:** Escape Route Protocol  
+
+---
+
+## Epilogue  
+
+Three years later, I haven’t had a single close call.  
+**The formula works—if you work with it.**  
+
+---
+
+**Comments**  
+
+- Funny  
+- 37 · 19 comments  
+
+---
+0:["6HNJMjS_1nHVfFmuoa_1a",[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"maxWidth":"s","children":[["$","script",null,{"type":"application/ld+json","suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Blog\",\"headline\":\"𝓦𝓻𝓲𝓽𝓲𝓷𝓰 𝓪𝓫𝓸𝓾𝓽 𝓭𝓮𝓼𝓲𝓰𝓷 𝓪𝓷𝓭 𝓽𝓮𝓬𝓱...\",\"description\":\"Read what 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓 has been up to recently\",\"url\":\"https://demo.magic-portfolio.com/blog\",\"image\":\"demo.magic-portfolio.com/og?title=%F0%9D%93%A6%F0%9D%93%BB%F0%9D%93%B2%F0%9D%93%BD%F0%9D%93%B2%F0%9D%93%B7%F0%9D%93%B0%20%F0%9D%93%AA%F0%9D%93%AB%F0%9D%93%B8%F0%9D%93%BE%F0%9D%93%BD%20%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%F0%9D%93%B2%F0%9D%93%B0%F0%9D%93%B7%20%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%AD%20%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%AC%F0%9D%93%B1...\",\"author\":{\"@type\":\"Person\",\"name\":\"𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"demo.magic-portfolio.com/about/me.jpg\"}}}"}}],["$","$L3",null,{"marginBottom":"l","variant":"display-strong-s","children":"𝓦𝓻𝓲𝓽𝓲𝓷𝓰 𝓪𝓫𝓸𝓾𝓽 𝓭𝓮𝓼𝓲𝓰𝓷 𝓪𝓷𝓭 𝓽𝓮𝓬𝓱..."}],["$","$L2",null,{"fillWidth":true,"flex":1,"children":[["$","$L4",null,{"columns":"1","mobileColumns":"1","fillWidth":true,"marginBottom":"40","gap":"m","children":[["$","$L5","Analyzing-Relative-Vehicle-Dynamics-to-Quantify-Pre-Impact-Risk-under-Variable-Brake-Efficiency-and-Inter-Vehicular-Spacing",{"post":{"metadata":{"title":"𝖠𝗇𝖺𝗅𝗒𝗓𝗂𝗇𝗀 𝖱𝖾𝗅𝖺𝗍𝗂𝗏𝖾 𝖵𝖾𝗁𝗂𝖼𝗅𝖾 𝖣𝗒𝗇𝖺𝗆𝗂𝖼𝗌 𝗍𝗈 𝖰𝗎𝖺𝗇𝗍𝗂𝖿𝗒 𝖯𝗋𝖾-𝖨𝗆𝗉𝖺𝖼𝗍 𝖱𝗂𝗌𝗄 𝗎𝗇𝖽𝖾𝗋 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾 𝖡𝗋𝖺𝗄𝖾 𝖤𝖿𝖿𝗂𝖼𝗂𝖾𝗇𝖼𝗒 𝖺𝗇𝖽 𝖨𝗇𝗍𝖾𝗋-𝖵𝖾𝗁𝗂𝖼𝗎𝗅𝖺𝗋 𝖲𝗉𝖺𝖼𝗂𝗇𝗀","publishedAt":"2024","summary":"𝖨 𝖾𝗑𝗉𝗅𝗈𝗋𝖾𝖽 𝗁𝗈𝗐 𝗉𝗁𝗒𝗌𝗂𝖼𝗌, 𝖻𝗋𝖺𝗄𝗂𝗇𝗀 𝖾𝖿𝖿𝗂𝖼𝗂𝖾𝗇𝖼𝗒, 𝖺𝗇𝖽 𝗌𝗉𝖺𝖼𝗂𝗇𝗀 𝖻𝖾𝗍𝗐𝖾𝖾𝗇 𝗏𝖾𝗁𝗂𝖼𝗅𝖾𝗌 𝖼𝖺𝗇 𝗍𝗎𝗋𝗇 𝖺 𝗇𝖾𝖺𝗋-𝗆𝗂𝗌𝗌 𝗂𝗇𝗍𝗈 𝖺 𝗅𝗂𝖿𝖾-𝗌𝖺𝗏𝗂𝗇𝗀 𝗅𝖾𝗌𝗌𝗈𝗇 𝗈𝗇 𝗌𝖺𝖿𝖾 𝖽𝗋𝗂𝗏𝗂𝗇𝗀.","image":"/article/Article 1.jpg","images":[],"tag":"Diary","team":[],"link":"","github":""},"slug":"Analyzing-Relative-Vehicle-Dynamics-to-Quantify-Pre-Impact-Risk-under-Variable-Brake-Efficiency-and-Inter-Vehicular-Spacing","content":"$6"},"thumbnail":true}]]}],false]}],["$","$L7",null,{"newsletter":{"display":true,"title":["𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎 𝚝𝚘 ","𝓘𝓼𝓼𝓪𝓬","'𝚜 𝙽𝚎𝚠𝚜𝚕𝚎𝚝𝚝𝚎𝚛"],"description":"𝖨 𝗈𝖼𝖼𝖺𝗌𝗂𝗈𝗇𝖺𝗅𝗅𝗒 𝗐𝗋𝗂𝗍𝖾 𝖺𝖻𝗈𝗎𝗍 𝖽𝖾𝗌𝗂𝗀𝗇, 𝗍𝖾𝖼𝗁𝗇𝗈𝗅𝗈𝗀𝗒, 𝖺𝗇𝖽 𝗌𝗁𝖺𝗋𝖾 𝗍𝗁𝗈𝗎𝗀𝗁𝗍𝗌 𝗈𝗇 𝗍𝗁𝖾 𝗂𝗇𝗍𝖾𝗋𝗌𝖾𝖼𝗍𝗂𝗈𝗇 𝗈𝖿       𝖼𝗋𝖾𝖺𝗍𝗂𝗏𝗂𝗍𝗒 𝖺𝗇𝖽 𝖾𝗇𝗀𝗂𝗇𝖾𝖾𝗋𝗂𝗇𝗀."}}]]}],null],null],null]},[null,["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/15321eadbcfb15cf.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/4327065330a0b563.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c96b3e5feff09199.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/838e13b95c2622d4.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a5c471f6f9fb2804.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/e578cf952a0222b2.css","precedence":"next","crossOrigin":"$undefined"}]],"$La"],null],null],["$Lb",null]]]]
+c:I[1162,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Flex"]
+e:I[6995,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"ToastProvider"]
+f:I[124,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Background"]
+10:I[9295,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Header"]
+11:I[1844,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"RouteGuard"]
+12:I[2313,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"PageTransition"]
+13:I[2060,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"Text"]
+14:I[9511,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"SmartLink"]
+15:I[7868,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"IconButton"]
+16:I[4093,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"CustomCursor"]
+17:I[4158,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"ScreenEffects"]
+18:I[8411,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"SoundEffects"]
+19:I[6620,["665","static/chunks/f97e080b-82142bce571282c5.js","240","static/chunks/53c13509-eaf564bb5542b29d.js","516","static/chunks/f7333993-e329e1e46a81e4cb.js","464","static/chunks/464-1c2112340ce114c6.js","975","static/chunks/975-90f9af93d0fbd433.js","7","static/chunks/7-9a00ac6a43763fd2.js","77","static/chunks/77-f0fc73d073db1e4a.js","404","static/chunks/app/blog/page-c933b394aee889d3.js"],"ThemeCustomizer"]
+d:T4c9,
+              (function() {
+                try {
+                  var stored = localStorage.getItem('themeConfig');
+                  if (stored) {
+                    var parsed = JSON.parse(stored);
+                    var root = document.documentElement;
+                    if (parsed.border) root.setAttribute('data-border', parsed.border);
+                    if (parsed.brand) root.setAttribute('data-brand', parsed.brand);
+                    if (parsed.accent) root.setAttribute('data-accent', parsed.accent);
+                    if (parsed.neutral) root.setAttribute('data-neutral', parsed.neutral);
+                    root.setAttribute('data-theme', 'dark');
+                    if (parsed.solid) root.setAttribute('data-solid', parsed.solid);
+                    if (parsed.solidStyle) root.setAttribute('data-solid-style', parsed.solidStyle);
+                    if (parsed.transition) root.setAttribute('data-transition', parsed.transition);
+                    if (parsed.scaling) root.setAttribute('data-scaling', parsed.scaling);
+                    if (parsed.surface) root.setAttribute('data-surface', parsed.surface);
+                  }
+                } catch (e) {}
+              })();
+            a:["$","$Lc",null,{"as":"html","lang":"en","background":"page","data-neutral":"slate","data-brand":"aqua","data-accent":"aqua","data-solid":"contrast","data-solid-style":"flat","data-theme":"dark","data-border":"rounded","data-surface":"translucent","data-transition":"micro","className":"__variable_f367f3 __variable_a06722","style":{"cursor":"none"},"children":["$","$L2",null,{"style":{"minHeight":"100vh"},"as":"body","fillWidth":true,"margin":"0","padding":"0","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{"children":[["$","$Lf",null,{"mask":{"cursor":true,"x":0,"y":0,"radius":85},"gradient":{"display":true,"x":60,"y":5,"width":130,"height":130,"tilt":-20,"colorStart":"brand-background-strong","colorEnd":"static-transparent","opacity":50},"dots":{"display":true,"color":"brand-on-background-weak","size":2,"opacity":25},"grid":{"display":false,"color":"neutral-alpha-weak","width":"$undefined","height":"$undefined","opacity":100},"lines":{"display":true,"opacity":20}}],["$","$Lc",null,{"fillWidth":true,"minHeight":"16"}],["$","$L10",null,{}],["$","$Lc",null,{"position":"relative","zIndex":0,"fillWidth":true,"paddingY":"l","paddingX":"l","horizontal":"center","flex":1,"children":["$","$Lc",null,{"horizontal":"center","fillWidth":true,"minHeight":"0","children":["$","$L11",null,{"children":["$","$L12",null,{"children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$L2",null,{"as":"section","fill":true,"center":true,"paddingBottom":"160","children":[["$","$L13",null,{"marginBottom":"s","variant":"display-strong-xl","children":"404"}],["$","$L3",null,{"marginBottom":"l","variant":"display-default-xs","children":"Page Not Found"}],["$","$L13",null,{"onBackground":"neutral-weak","children":"The page you are looking for does not exist."}]]}],"notFoundStyles":[]}]}]}]}]}],["$","$Lc",null,{"as":"footer","position":"relative","fillWidth":true,"padding":"8","horizontal":"center","mobileDirection":"column","children":[["$","$Lc",null,{"className":"Footer_mobile__TYNqJ","maxWidth":"m","paddingY":"8","paddingX":"16","gap":"16","horizontal":"space-between","vertical":"center","children":[["$","$L13",null,{"variant":"body-default-s","onBackground":"neutral-strong","children":[["$","$L13",null,{"onBackground":"neutral-weak","children":["© ",2026," /"]}],["$","$L13",null,{"paddingX":"4","children":"𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓"}],["$","$L13",null,{"onBackground":"neutral-weak","children":["/ My"," ",["$","$L14",null,{"style":{"marginLeft":"-0.125rem"},"href":"hhttps://github.com/Issac-Moses/Issac-Moses-Portfolio","children":"PortFolio"}]]}]]}],["$","$Lc",null,{"gap":"16","children":[["$","$L15","𝙶𝚒𝚝𝙷𝚞𝚋",{"href":"https://github.com/Issac-Moses","icon":"github","tooltip":"𝙶𝚒𝚝𝙷𝚞𝚋","size":"s","variant":"ghost"}],["$","$L15","𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗",{"href":"https://www.linkedin.com/in/i%EF%BD%93%EF%BD%93-a-c-m-%E5%8F%A3%EF%BD%93%E3%83%A2%EF%BD%93-d-12837831b/","icon":"linkedin","tooltip":"𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗","size":"s","variant":"ghost"}],"",["$","$L15","𝙴𝚖𝚊𝚒𝚕",{"href":"mailto:issacmoses19082005@gmail.com","icon":"email","tooltip":"𝙴𝚖𝚊𝚒𝚕","size":"s","variant":"ghost"}]]}]]}],["$","$Lc",null,{"height":"80","show":"s"}]]}],["$","$L16",null,{}],["$","$L17",null,{}],["$","$L18",null,{}],["$","$L19",null,{}]]}]]}]}]
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"𝓦𝓻𝓲𝓽𝓲𝓷𝓰 𝓪𝓫𝓸𝓾𝓽 𝓭𝓮𝓼𝓲𝓰𝓷 𝓪𝓷𝓭 𝓽𝓮𝓬𝓱..."}],["$","meta","3",{"name":"description","content":"Read what 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓 has been up to recently"}],["$","meta","4",{"name":"robots","content":"index, follow"}],["$","meta","5",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","6",{"property":"og:title","content":"𝓦𝓻𝓲𝓽𝓲𝓷𝓰 𝓪𝓫𝓸𝓾𝓽 𝓭𝓮𝓼𝓲𝓰𝓷 𝓪𝓷𝓭 𝓽𝓮𝓬𝓱..."}],["$","meta","7",{"property":"og:description","content":"Read what 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓 has been up to recently"}],["$","meta","8",{"property":"og:url","content":"https://demo.magic-portfolio.com/blog"}],["$","meta","9",{"property":"og:image","content":"https://demo.magic-portfolio.com/og?title=%F0%9D%93%A6%F0%9D%93%BB%F0%9D%93%B2%F0%9D%93%BD%F0%9D%93%B2%F0%9D%93%B7%F0%9D%93%B0%20%F0%9D%93%AA%F0%9D%93%AB%F0%9D%93%B8%F0%9D%93%BE%F0%9D%93%BD%20%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%F0%9D%93%B2%F0%9D%93%B0%F0%9D%93%B7%20%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%AD%20%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%AC%F0%9D%93%B1..."}],["$","meta","10",{"property":"og:image:alt","content":"𝓦𝓻𝓲𝓽𝓲𝓷𝓰 𝓪𝓫𝓸𝓾𝓽 𝓭𝓮𝓼𝓲𝓰𝓷 𝓪𝓷𝓭 𝓽𝓮𝓬𝓱..."}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"𝓦𝓻𝓲𝓽𝓲𝓷𝓰 𝓪𝓫𝓸𝓾𝓽 𝓭𝓮𝓼𝓲𝓰𝓷 𝓪𝓷𝓭 𝓽𝓮𝓬𝓱..."}],["$","meta","14",{"name":"twitter:description","content":"Read what 𝓘𝓼𝓼𝓪𝓬 𝓜𝓸𝓼𝓮𝓼 𝓓 has been up to recently"}],["$","meta","15",{"name":"twitter:image","content":"https://demo.magic-portfolio.com/og?title=%F0%9D%93%A6%F0%9D%93%BB%F0%9D%93%B2%F0%9D%93%BD%F0%9D%93%B2%F0%9D%93%B7%F0%9D%93%B0%20%F0%9D%93%AA%F0%9D%93%AB%F0%9D%93%B8%F0%9D%93%BE%F0%9D%93%BD%20%F0%9D%93%AD%F0%9D%93%AE%F0%9D%93%BC%F0%9D%93%B2%F0%9D%93%B0%F0%9D%93%B7%20%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%AD%20%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%AC%F0%9D%93%B1..."}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"1280x1280"}]]
+1:null
